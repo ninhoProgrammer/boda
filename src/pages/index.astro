@@ -12,7 +12,7 @@ import Makeweb from '../components/Makeweb.astro';
 ---
 
 <Layout>
-	<Loading>
+	<Loading client:only="react">
 		<section class="flex flex-col items-center justify-center h-screen w-screen">
 			<Hero />
 		</section>
@@ -36,5 +36,5 @@ import Makeweb from '../components/Makeweb.astro';
 		<section class="items-center justify-center">
 			<Makeweb />
 		</section>
-	</Loading>
+	</Loading-->
 </Layout>
