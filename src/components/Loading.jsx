@@ -26,7 +26,7 @@ export default function LoadingInvite({ children }) {
 
   // Cuando ya terminó la explosión, carga el contenido
   return (
-    <div className="animate-fadeIn ">
+    <div className="flex flex-wrap h-screen animate-fadeIn ">
       {children}
     </div>
   );
