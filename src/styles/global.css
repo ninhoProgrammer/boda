@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@tailwind utilities;
-
 @layer utilities {
   @keyframes fadeIn {
     from { opacity: 0; }

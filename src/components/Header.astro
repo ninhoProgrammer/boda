@@ -1,4 +1,24 @@
 <header id="main-header" class="flex flex-grow bg-opacity-15 w-full fixed top-0 justify-between z-40 md:text-base 2xl:text-xl">
-    <div class="absolute top-0 left-0 w-1/2 h-96 border-t-4" style="border-color: #FFD700; transform: rotate(85deg); transform-origin: top left;"></div>
-    <div class="absolute top-0 right-0 w-1/2 h-96 border-t-4" style="border-color: #FFD700; transform: rotate(-85deg); transform-origin: top right;"></div>
+    <audio id="myAudio" loop autoplay>
+		<source src="../track.mp3" type="audio/mpeg">
+		Tu navegador no soporta audio.
+	</audio>
+	
+	  <!-- Controles personalizados -->
+	<button id="playPauseBtn">🔊</button>
 </header>
+
+<script type="text/javascript">
+    const audio = document.getElementById("myAudio");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    playPauseBtn.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.textContent = "🔇";
+        } else {
+            audio.pause();
+            playPauseBtn.textContent = "🔊";
+        }
+    });
+</script>
