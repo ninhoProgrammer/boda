@@ -1,11 +1,12 @@
 <header id="main-header" class="flex flex-grow bg-opacity-15 w-full fixed top-0 justify-between z-40 md:text-base 2xl:text-xl">
+   
     <audio id="myAudio" loop autoplay>
 		<source src="../track.mp3" type="audio/mpeg">
 		Tu navegador no soporta audio.
 	</audio>
 	
 	  <!-- Controles personalizados -->
-	<button id="playPauseBtn">🔊</button>
+	<button id="playPauseBtn">🔇</button>
 </header>
 
 <script type="text/javascript">
@@ -15,10 +16,10 @@
     playPauseBtn.addEventListener("click", function() {
         if (audio.paused) {
             audio.play();
-            playPauseBtn.textContent = "🔇";
+            playPauseBtn.textContent = "🔊";
         } else {
             audio.pause();
-            playPauseBtn.textContent = "🔊";
+            playPauseBtn.textContent = "🔇";
         }
     });
 </script>
