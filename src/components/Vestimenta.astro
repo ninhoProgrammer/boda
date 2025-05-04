@@ -1,24 +1,24 @@
 ---
 import AnimacionScroll from '../components/AnimacionScroll.jsx';
 ---
-
-
-    <div class="relative items-center justify-center p-6 md:p-8 ">
-        <AnimacionScroll client:visible direction="top">
-            <h2 class="text-4xl md:text-8xl font-bold mb-4 text-center">
-                Codigo de Vestimenta <br>
-            </h2>
-        </AnimacionScroll>
-        <AnimacionScroll client:visible direction="bottom">
-            <div class="flex justify-center mt-2 relative">
-                <img src="../etiqueta.webp" alt="Codigo de Vestimenta" class="w-50 h-50 md:w-80 md:h-80" /> 
-            </div>
-            <div class="relative bg-[url('../fondo.webp')] bg-center bg-no-repeat bg-contain w-full h-auto items-center ">
-                <p class="text-center font-serif text-lg ">
-                    <strong>Etiqueta</strong>
-                    <br>**Evite color azul rey** <br>
-                </p>
-                
-            </div>
-        </AnimacionScroll>
-    </div>
+<div class="relative items-center justify-center p-6 md:p-8 ">
+    <AnimacionScroll client:visible direction="top">
+        <h2 class="text-4xl md:text-8xl font-bold mb-4 text-center">
+            Codigo de Vestimenta <br>
+        </h2>
+    </AnimacionScroll>
+    <AnimacionScroll client:visible direction="left">
+        <div class="flex justify-center mt-2 relative">
+            <img src="../etiqueta.webp" alt="Codigo de Vestimenta" class="w-50 h-50 md:w-80 md:h-80" /> 
+        </div>
+    </AnimacionScroll>
+    <AnimacionScroll client:visible direction="right">
+        <div class="relative bg-[url('../fondo.webp')] bg-center bg-no-repeat bg-contain w-full h-auto items-center ">
+            <p class="text-center font-serif text-lg ">
+                <strong>Etiqueta</strong>
+                <br>**Evite color azul rey** <br>
+            </p>
+            
+        </div>
+    </AnimacionScroll>
+</div>

@@ -31,7 +31,7 @@ export default function CountdownTimer() {
   }, [targetDate]);
 
   return (
-    <div className="text-center my-8 mb-24 md:mb-0">
+    <div className="text-center my-8 p-10 mb-24 md:mb-0">
       <AnimacionScroll direction="bottom">
         <h1 className="text-4xl md:text-8xl font-bold text-center pt-10">
           Faltan
