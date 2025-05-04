@@ -5,25 +5,25 @@ export default function AnimacionScroll({ children, direction = 'right' }) {
     const ref = useRef();
   
     useEffect(() => {
-      const el = ref.current;
-      const observer = new IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add('in-view');
-        } else {
-          el.classList.remove('in-view');
-        }
-      });
+        const el = ref.current;
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                el.classList.add('in-view');
+            } else {
+                el.classList.remove('in-view');
+            }
+        });
   
-      if (el) observer.observe(el);
+        if (el) observer.observe(el);
   
-      return () => observer.disconnect();
+        return () => observer.disconnect();
     }, []);
   
     const directionMap = {
-      left: 'off-left',
-      right: 'off-right',
-      top: 'off-top',
-      bottom: 'off-bottom',
+        left: 'off-left',
+        right: 'off-right',
+        top: 'off-top',
+        bottom: 'off-bottom',
     };
   
     const directionClass = directionMap[direction] || 'off-right';

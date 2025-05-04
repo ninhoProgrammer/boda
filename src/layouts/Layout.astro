@@ -16,6 +16,7 @@ import "../styles/global.css";
 	</head>
 	
 	<body class="bg-fixed bg-[url('../background.webp')] bg-cover bg-center  text-shadow-gray-700">
+		
 		<Header />
 		<slot />
 	</body>
@@ -31,6 +32,19 @@ import "../styles/global.css";
   		font-style: normal;
 
 	}
-
-	
 </style>
+
+<script type="text/javascript">
+    const audio = document.getElementById("myAudio");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    playPauseBtn.addEventListener("click", function() {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.textContent = "🔊";
+        } else {
+            audio.pause();
+            playPauseBtn.textContent = "🔇";
+        }
+    });
+</script>
