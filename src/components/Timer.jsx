@@ -38,7 +38,7 @@ export default function CountdownTimer() {
         </h1>
       </AnimacionScroll>
       <AnimacionScroll direction="top">
-        <div className="flex justify-center gap-6 mt-2 text-xl md:text-3xl font-bold">
+        <div className="flex justify-center gap-6 mt-8 text-xl md:text-3xl font-bold">
           <div>
             <span>{String(timeLeft.days).padStart(2, '0')}</span><br />
             <span className="text-sm font-normal">Días</span>
