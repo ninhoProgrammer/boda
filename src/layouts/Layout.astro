@@ -1,5 +1,5 @@
 ---
-
+import { Analytics } from '@vercel/analytics/react';
 import Header from "../components/Header.astro";
 import "../styles/global.css";
 ---
@@ -16,9 +16,9 @@ import "../styles/global.css";
 	</head>
 	
 	<body class="bg-fixed bg-[url('../background.webp')] bg-cover bg-center  text-shadow-gray-700">
-		
 		<Header />
 		<slot />
+		<Analytics />
 	</body>
 
 </html>
